@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+  <title>HiPChips at MICRO-2025</title>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="The 5th HiPChips Conference at MICRO-2025, Seoul, Korea" />
+  <meta property="og:description" content="Target the novel researches and industry developments on advanced chiplet and interconnect technologies." />
+  <meta property="og:image" content="https://hipchips.github.io/micro2024/images/hipchips-meta.jpg" />
+  <link rel="icon" type="image/x-icon" href="https://hipchips.github.io/micro2024/images/hipchips_org_logo.jpg">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata"> 
+  <style>
+    body, html {
+      height: 100%;  
+      font-family: "Inconsolata", sans-serif; 
+    }
+    .bgimg {
+      height: 15%;
+      background-position: center 0;  
+      background-size: cover;
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+    }     
+    table {border: none;}
+    h1 {
+        font-size: xx-large;
+    }
+    h2 {
+        font-size: x-large;
+        border-bottom: 1px solid #cccccc;
+        color: black;
+    }
+    .menu {  
+      display: none;
+    }
+    
+    .bold { font-weight: bold; }
+    .red { color: #FF0000; }
+    
+    </style>
+<body>
+    <!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-sidebar w3-black w3-card w3-left-align w3-large" style="width:min-content; height:fit-content; opacity:70%; ">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-small w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#home" class="w3-bar-item w3-button w3-padding-small w3-hover-blue">Home</a>
+    <a href="#cfp" class="w3-bar-item w3-button w3-hide-small w3-padding-small w3-hover-blue">Call for Paper</a>
+    <a href="#organizers" class="w3-bar-item w3-button w3-hide-small w3-padding-small w3-hover-blue">Organizers</a>
+    <a href="#speakers" class="w3-bar-item w3-button w3-hide-small w3-padding-small w3-hover-blue">Speakers</a>
+    <a href="#schedule" class="w3-bar-item w3-button w3-hide-small w3-padding-small w3-hover-blue">Schedule</a>
+    <a href="#venue" class="w3-bar-item w3-button w3-hide-small w3-padding-small w3-hover-blue">Venue</a>
+ </div>
+ <div class="w3-bar w3-grayscale-min w3-card w3-right-align w3-large" style="width:min-content; opacity:70%; float:right">
+    <a href="https://hipchips.github.io/" class="w3-bar-item w3-button w3-hide-small w3-padding-small w3-hover-blue"><font color="green">HiPChips.org</font></a>
+ </div>
+</div>
+	
+<!-- Header with image -->
+<!-- header class= "bgimg w3-display-container w3-grayscale-min" style="background-color:lightgray" id="home" -->
+  <div class="w3-container w3-center" style="background-color:lightgray" id="home">
+    <h1 style="text-align: center;" id="t1">The HiPChips Conference</h1>
+  </div>
+<!-- /header -->
+	
+<div class="w3-row-padding w3-padding-16 w3-container">
+    <h3 style="text-align: center;">The 5<sup>th</sup> International Workshop on</h3>
+    <h3 style="text-align: center;">High Performance Chiplet and Interconnect Architectures (<strong>HiPChips</strong>) </h3>
+    <h4 style="text-align: center;">Co-located with &nbsp;<a href="https://microarch.org/micro58/" style="color: blue">MICRO 2025</a> at Seoul, South Korea</h4>
+    <h4 style="text-align: center;">October 19<sup>th</sup>, 2025</h4>
+  <center>
+    <img src="./images/hipchips-meta.jpg" width="20%" height="auto"> <br>
+    <font style="font-size: x-small; color: darkgreen;">(Courtesy Meta AI)</font>
+  </center>
+</div>
+<div class="w3-row-padding w3-padding-16 w3-container" id="cfp">
+  <div class="w3-content">          
+      <h2>Call for Paper </h2>
+      <h5 class="w3-text-black"> 
+	Fast-evolving artificial intelligence (AI) algorithms such as large language models (LLMs) have been driving
+  ever increasing computing demands in data centers as well as on the edge. While the traditional accelerator architecture
+  continues evolving to provide more processing power within a single chip, the chiplet-based heterogeneous architecture
+  is becoming a mainstream of chip designs due to these advantages: 1) Significant reduction of design complexity and cost
+  due to mixed technologies and shifting away from monolithic chip design; 2) Heterogeneous chiplets can be integrated to
+  accommodate the diversified runtime behaviors of AI applications at the chip level, boosting performance as well as increasing
+  compute efficiency; 3) Ease of scaling up and scaling out chiplets brings new opportunities to boost compute power at the system level;
+  4) Leveraging on the latest technologies, such as integration of optical interconnects via interposer waveguides and laser integration.
+	  </h5>
+      <h5 class="w3-text-black"> 
+  However, how to architect, interconnect and package chiplets and orchestrate heterogeneous computing resources is the key
+  to success. The current chiplet ecosystem faces a few challenges: 1) Lack of mature unified standards and tools to allow
+  different pieces of silicon across vendors to integrate seamlessly through a common interface. 2) How to enable composable
+  architecture design for better resource sharing and data coherency. 3) Extended reach of chiplet interconnect with high bandwidth
+  and low latency, especially when the chip area gets close to the wafer scale. 4) Software programming model for heterogeneous
+  parallelism on chip with optimal power and performance.
+	  </h5>
+      <h5 class="w3-text-black"> 
+  The 5th International workshop on the High Performance Chiplet and Interconnect Architectures (<strong>HiPChips-2025</strong>) aims
+  to bring together the latest research and development from academia and industry communities and foster closer collaboration to
+  address the challenges above. This workshop will focus on several key technology areas in chiplet-based architecture design and
+  software ecosystem development. Topics will include but not limited to the followings:	      
+	  <br>
+	  Architecture:
+        <li> Emerging computing technologies (such as neuromorphic / in-memory computing, optical and quantum computing) and integration
+             with heterogeneous chiplet architecture </li>
+        <li> Optical chiplet integration approaches to enable composable microarchitectures </li>
+        <li> AI powered chiplet designs and system optimizations </li>
+        <li> Best practice of chiplet manufacturing and advanced packaging </li>
+
+	  Software and Ecosystem:
+        <li> Hardware software co-designs on chiplet architecture, programming model and optimizations of heterogeneous chiplet systems </li>
+        <li> AI workload characterization and scheduling on heterogeneous chiplet systems</li>
+        <li> Performance/power optimizations for resource constrained scenarios (edge) </li>
+        <li> Chiplet-to-chiplet proprietary/standardized interface such as UCIe, NVLink etc. </li>
+     </h5>
+          
+    <h5 class="w3-text-black">
+        <p>
+          <!-- For any submission information, please send your requests to organizers at <strong> hipchips2023@gmail.com</strong>, 
+	        due by <font color="red"> April 30th </font>.   -->
+        </p>
+  </h5>
+  </div>
+  </div>
+
+  <div class="w3-row-padding w3-padding-16 w3-container" id="organizers">
+    <div class="w3-content">
+      <h2>Organizers</h2>
+        <h5 class="w3-text-black" id="org-chester">
+          <p> <img style="float:left;  margin-right: 20px; margin-top: 10px;" src="https://hipchips.github.io/micro2024/images/portrait-park.jpg"  width="auto">
+		  <strong> <a href="https://www.linkedin.com/in/chestersungchungpark/">Chester Park</a>, Konkuk University</strong> <br>
+      Dr. Chester Park is a Professor in the Department of Electrical and Electronics Engineering, Konkuk University, South Korea,
+      where he is currently working on algorithm and architecture co-optimizations using virtual platform based system simulations.
+      In particular, he has been developing a new system simulator, NetTLMSim, that facilitates the system-level optimizations of
+      heterogeneous chiplet system dataflow. Before joining academia, he was with Samsung Electronics, Giheung, South Korea, and
+      Ericsson Research, CA. He received the Ph.D. degree in electrical engineering from the Korea Advanced Institute of Science and Technology (KAIST), Daejeon.
+		</p>
+        </h5>   
+      <h5 class="w3-text-black" id="org-weifeng">
+          <p> <img style="float:left;  margin-right: 20px; margin-top:10px;" src="https://hipchips.github.io/hpca2023/portraits/portrait-weifeng.png"  width="auto">
+	<strong>  <a href="https://www.linkedin.com/in/weifeng-zhang-9021aa3/"> Weifeng Zhang</a>, Lenovo Research</strong> <br>
+    Dr. Weifeng Zhang is Corporate VP of Lenovo Group and the Director of Intelligent Computing Lab at Lenovo Research.
+    He currently serves as the Chair of the AI Co-Design Workgroup at the Open Compute Project Foundation (OCP) and 
+    the Program Committee for the OCP Future Technology Symposiums (AI/HPC track). Prior to joining Lenovo, Weifeng was the
+    Chief Architect and VP of Software at Lightelligence Inc for system architecture, hardware software co-design, and 
+    software ecosystem to empower optical computing and optical interconnect technologies. Before Lightelligence, Weifeng 
+    was a fellow of Alibaba Group and the Chief Scientist of Heterogeneous Computing at Alibaba Cloud Infrastructure. 
+    He was also a founding member of the Board of Directors at MLCommons (MLPerf™). Weifeng received his PhD in 
+    Computer Science from the University of California, San Diego (UCSD).
+		</p>
+        </h5>
+        <h5 class="w3-text-black" id="org-dj">
+          <p> <img style="float:left;  margin-right: 20px; margin-top: 10px;" src="./images/portrait-dj.png"  width="auto">
+		  <strong> <a href="https://www.linkedin.com/in/djani/">Dharmesh Jani</a>, Meta Platforms</strong> <br>
+  	Dharmesh Jani (‘DJ’) is Director at Meta leading the Infrastructure Technology Ecosystem and Partnerships and has been
+    an active member of OCP since 2012. He is also co-chair of the OCP Incubation Committee where he started the OCP strategic
+    initiatives, launched multiple projects such as Sustainability, Open Systems for AI and is a founding member of the Board 
+    of Directors for UCIe consortium as well as UALink. Prior to Meta, he worked in Fortune 500 companies leading product
+    development as well as in startups building zero to one businesses. He has a BTech from IIT-Bombay, an MSEE from UCLA, and an MBA from UC-Berkeley (Haas).
+		</p>
+        </h5>
+    </div>
+  </div>   
+
+<div class="w3-row-padding w3-padding-16 w3-container" id="speakers">
+    <div class="w3-content">
+      <h2>Speakers</h2>
+        <h5 class="w3-text-black">
+		<p>
+<table cellpadding="1" cellspacing="10" style="width:100%">
+  <!---
+	<tbody>
+    <tr style="vertical-align:middle" id="sp-mallik">
+			<td width="15%" align="center"><img src="./images/portrait-mallik.png" height="30%"> </td>
+			<td width="85%" align="left" style="background-color:lightgray;">
+        <strong><a href="https://www.linkedin.com/in/amallik/">Dr. Arindam Mallik </a></strong>, Department Director, IMEC <br>
+       	Arindam Mallik leads Compute System Architecture (CSA) department at imec. He is a technologist enabling HW-SW co-design
+	at the cross-point of AI algorithms, computer architecture, and novel technology solutions. 
+	Arindam has spent the past 20 years pushing the boundaries of technology research to provide novel solutions with a direct
+	impact on the semiconductor industry. He has authored or co-authored more than 100 papers in international journals, 
+	conference proceedings, and holds number of relevant patents. He received M.S. and PhD degree in Electrical Engineering 
+	and Computer Science from Northwestern University, USA in 2004 and 2008, respectively.
+       </td>
+		</tr>
+    <tr style="vertical-align:middle" id="sp-tushar">
+			<td width="15%" align="center"><img src="./images/portrait-tushar.png" height="30%"> </td>
+			<td width="85%" align="left">
+        <strong><a href="https://www.linkedin.com/in/tushar-krishna-a60b0970/">Dr. Tushar Krishna </a></strong>, 
+        Associate Professor, Georgia Institute of Technology <br>
+ 	Tushar is an Associate Professor in the School of Electrical and Computer Engineering at Georgia Institute of Technology.
+	He has also been a visiting professor at MIT, Harvard University and a researcher at Intel. He received a Ph.D. in Electrical Engineering
+	and Computer Science from MIT (2014), a M.S.E from Princeton University (2009), and a B.Tech
+	from the Indian Institute of Technology (IIT) Delhi (2007). His research spans computer architecture,
+	interconnection networks, networks-on-chip (NoC), and AI/ML accelerator systems. He was inducted into the HPCA Hall of Fame
+	(2022) and honored by the “Class of 1940 Course Survey Teaching Effectiveness Award” (2018), the “Roger P. Webb Outstanding
+	Junior Faculty Award” (2021), the “Richard M. Bass/Eta Kappa Nu Outstanding Junior Teacher Award” (2023), 
+	and the “Roger P. Webb Outstanding Mid-career Faculty Award” (2024).
+	</td>
+		</tr>
+    <tr style="vertical-align:middle" id="sp-deb">
+	<td width="15%" align="center"><img src="https://hipchips.github.io/hpca2023/portraits/portrait-deb.png" height="auto" </td>
+	<td width="20%" align="left" style="background-color:lightgray;">
+        <strong><a href="https://www.linkedin.com/in/debendra-das-sharma-72514918/">Dr. Debendra Das Sharma</a></strong><br>
+        UCIe Chair, Sr Fellow, Intel <br>
+        Chief Architect of I/O Technologies and Standards: Responsible for driving Intel-wide critical interconnect technologies
+	in PCIe, CXL, Intel’s coherency interconnect, on-package interconnects, as well as on-die standards (PIPE, LPIF, CPI, SFI).
+       </td>
+		</tr> 
+    <tr style="vertical-align:middle" id="sp-pan">
+			<td width="15%" align="center"><img src="./images/portrait-pan.png" height="auto" </td>
+			<td width="20%" align="left">
+        <strong><a href="https://www.linkedin.com/in/davidzpan/">Dr. David Pan</a></strong>, Chair Professor, UT Austin<br>
+        David Z. Pan (Fellow of ACM, IEEE, and SPIE) directs the UT Design Automation (UTDA) Lab. His research interests include
+	electronic design automation, machine learning, design for manufacturing, and emerging technologies. 
+	He has published 500+ refereed papers and graduated 52+ PhDs/postdocs who are holding key academic/industry positions.
+	He has won the SRC Technical Excellence Award in 2013 and 21 Best Paper Awards in premier EDA and chip venues, among others.
+	David obtained his PhD in Computer Science from UCLA.
+       </td>
+		</tr>
+    <tr style="vertical-align:middle" id="sp-ma">
+			<td width="15%" align="center"><img src="https://hipchips.github.io/hpca2023/portraits/portrait-kaisheng.png" height="auto"> </td>
+			<td width="85%" align="left" style="background-color:lightgray;">
+        <strong><a href="https://group.iiis.tsinghua.edu.cn/~maks/">Dr. Kaisheng Ma</a></strong>, Associate Professor, Tsinghua University <br>
+ 	Kaisheng is an Associate Professor in Institute for Interdisciplinary Information Sciences (IIIS), Tsinghua University. 
+	He received his Ph.D. in Computer Science and Engineering at the Pennsylvania State University. His research focuses
+	on Robust and Efficient AI Algorithms, Post-Moore Architecture, and High-Performance Chips. Dr. Ma has published more than
+	50 papers on top conferences including NeurIPS, ICCV, AAAI, CVPR, ISCA, ASPLOS, MICRO, HPCA, DAC etc. He has won many awards
+	and honors, including 2024 HPCA Distinguished Artifact Award (1/410), 2022 CCF Integrated Circuit Early Career Award, 
+	2020 Springer Nature Research Highlights from China Collection Award, 2017 ASP-DAC Best Paper Award, 2016 IEEE MICRO Top Picks,
+	2015 HPCA Best Paper Award, etc.
+       </td>
+		</tr>
+    <tr style="vertical-align:middle" id="sp-durgesh">
+			<td width="15%" align="center"><img src="./images/portrait-durgesh.png" height="30%"> </td>
+			<td width="85%" align="left">
+        <strong><a href="https://www.linkedin.com/in/durgeshsrivastava/">Durgesh Srivastava</a></strong>, CTO, MIPS <br>
+	Durgesh is the CTO at MIPS. Before MIPS, he held the Senior Director / Data Center Product Architect at Nvidia and various
+	tech/management positions at Intel. Durgesh is an alumnus of IIT Kanpur and Hong Kong University of Science and Technology.
+       </td>
+		</tr>
+    <tr style="vertical-align:middle" id="sp-bapi">
+			<td width="15%" align="center"><img src="https://hipchips.github.io/isca2023/images/portrait-bapi.jpg" height="auto" </td>
+			<td width="20%" align="left" style="background-color:lightgray;">
+        <strong><a href="https://www.linkedin.com/in/bapivinnakota/">Dr. Bapi Vinnakota</a></strong>, Program Manager, NIST <br>
+        Bapi Vinnakota is a program manager with the NAPMP in CHIPS R&D Office in NIST. Prior to joining NIST, he started
+	and led the Open Domain-Specific Architecture sub-project, within the Open Compute Project to create and establish chiplet economy.
+	He also participated in the Manufacturing Roadmap for Heterogeneous Integration and Electronic Packaging,  a roadmap effort
+	sponsored by NIST and led by Prof. Subu Iyer at UCLA and SEMI. Bapi received his Ph.D. from Princeton University.
+       </td>
+		</tr>
+    <tr style="vertical-align:middle" id="sp-gu">
+			<td width="15%" align="center"><img src="./images/portrait-jiaqi.png" height="auto"> </td>
+			<td width="85%" align="left">
+        <strong><a href="https://www.linkedin.com/in/jiaqi-gu-a86156141/">Dr. Jiaqi Gu</a></strong>, Assistant Professor, Arizona State University <br>
+	Jiaqi is an Assistant Professor of the School of Electrical, Computer and Energy Engineering at Arizona State University.
+	He received his B.E. degree from Fudan University in 2018, and the Ph.D. degree in Electrical and Computer Engineering from
+	The University of Texas at Austin in 2023. His research interests include emerging technology for next-generation AI 
+	computing systems, hardware-algorithm co-design, AI/ML for hardware design, and electronic-photonic design automation.
+       </td>
+		</tr>
+    <tr style="vertical-align:middle" id="sp-park">
+			<td width="15%" align="center"><img src="./images/portrait-fitzgerald.png" height="auto"></td>
+			<td width="85%" align="left" style="background-color:lightgray;">
+        <strong><a href="https://www.linkedin.com/in/fitzgerald-sungkyung-park-0446006/">Dr. Fitzgerald Sungkyung Park</a></strong>, Professor, Pusan National University<br>
+	Fitzgerald Sungkyung Park took his Ph.D. degree in electronics engineering from Seoul National University, Korea. 
+	He worked for Samsung Electronics, Electronics and Telecommunications Research Institute (ETRI), and Ericsson, Inc., USA, 
+	where he developed circuits for various transceivers. After joining Pusan National University, his research interests include design
+	and modeling of SoC, hardware accelerators, and virtual platforms for neural networks and 6G.
+       </td>
+		</tr>
+    <tr style="vertical-align:middle" id="sp-srikant">
+			<td width="15%" align="center"><img src="./images/portrait-srikant.png" height="auto"> </td>
+			<td width="85%" align="left">
+        <strong><a href="https://www.linkedin.com/in/srikantvv/">Dr. Srikant Bharadwaj</a></strong>, Sr. Researcher, Microsoft <br>
+	Srikant Bharadwaj is a Senior Researcher at Microsoft working on hardware-software co-design for machine learning and
+	high-performance computing applications in the Systems Innovation Group. Srikant received his Master’s  and PhD degree
+	in Electrical and Computer Engineering from Georgia Institute of Technology. Before joining Microsoft, Srikant worked
+	as a Senior Researcher at AMD Research for about 4.5 years.
+       </td>
+		</tr>
+    <tr style="vertical-align:middle" id="sp-venkat">
+			<td width="15%" align="center"><img src="./images/portrait-venkat.png" height="auto" </td>
+			<td width="20%" align="left" style="background-color:lightgray;">
+        <strong><a href="https://www.linkedin.com/in/venkatramesh/">Venkat Ramesh</a></strong>, Production System Lead, Meta<br>
+        Venkat Ramesh is a Production Systems Engineer working in Meta's Infrastructure Org. Venkat leads various initiatives on
+	diagnostics development, telemetry gathering  and performance for AI silicon, systems and training clusters. In his past life,
+	he worked on telemetry software, as well as performance engineering teams at a couple of Flash vendors.
+       </td>
+		</tr>
+    <tr style="vertical-align:middle" id="sp-cao">
+			<td width="15%" align="center"><img src="./images/portrait-lihong.png" height="auto" </td>
+			<td width="20%" align="left">
+        <strong><a href="https://www.linkedin.com/in/lihongcao/">Lihong Cao</a></strong>, Sr. Director, ASE Group<br>
+        Lihong Cao is a senior director of engineering/technical marketing at ASE US Inc. 
+	She has comprehensive experience driving new product and advanced packaging technology development, new product introduction,
+	quality and reliability, Fab/OSATs processes and root cause analysis. Responsible for advanced packaging architecture, chiplets
+	interconnect, advanced packaging technology development (2.5D/3D, FOCoS, Embedded Bridge, SIP, SiPh) for Chiplets and
+	Heterogeneous Integration, Technology promotion, Strategic planning and Business engagement. She leads chiplets Die to Die
+	interconnect standardization effort in UCIe (Universal Chiplets Interconnect Express) consortium as Board of Director of ASE.
+       </td>
+		</tr>
+    <tr style="vertical-align:middle" id="sp-saeed">
+			<td width="15%" align="center"><img src="./images/portrait-saeed.png" height="auto" </td>
+			<td width="20%" align="left" style="background-color:lightgray;">
+        <strong><a href="https://www.linkedin.com/in/saeedf/">Dr. Saeed Fathololoumi</a></strong>, System Lead, Intel<br>
+        Saeed Fathololoumi is a Principal Engineer and Photonic Architect at Intel, developing co-packaged optics and optical compute 
+	interconnect for AI/ML ASIC connectivity applications. He has led development of many industry firsts,
+	including OCI chiplets for connecting XPUs and fully operation co-package optic connectivity with switch ASIC. He worked at
+	Elenion Technologies, Mellanox, Kotura and National Research Council of Canada, previously. 
+	He obtained his PhD in Electrical and Computer Engineering from University of Waterloo.
+       </td>
+		</tr>
+    <tr style="vertical-align:middle" id="sp-nathan">
+			<td width="15%" align="center"><img src="./images/portrait-nathan.png" height="auto" </td>
+			<td width="20%" align="left">
+        <strong><a href="https://www.linkedin.com/in/nathan-kalyanasundharam-5b95943/">Nathan Kalyanasundharam</a></strong>, Corporate Fellow, AMD<br>
+        Nathan is the lead architect of AMD’s Infinity Fabric, responsible for delivering coherent interconnect protocol and
+	technology across all AMD products. He is passionate about open standards to enable heterogenous computing. 
+	He is a member of the Board of Directors at Compute Express Link (CXL) and Universal Chiplet Interconnect Express(UCIE) consortia.
+       </td>
+		</tr>
+    <tr style="vertical-align:middle" id="sp-koichi">
+			<td width="15%" align="center"><img src="./images/portrait-koichi.png" height="auto" </td>
+			<td width="20%" align="left" style="background-color:lightgray;">
+        <strong><a href="https://www.linkedin.com/in/koichi-yamaguchi-bb86576/">Dr. Koichi Yamaguchi</a></strong>, Meta <br>
+        Koichi Yamaguchi received his B.E. and M.E. degrees in Electrical Engineering from the Tokyo Institute of Technology, 
+	and Ph.D. in Engineering from Tokyo University. He was a visiting scholar at Stanford University, and worked at NEC,
+	Renesas Electronics, MegaChips Technology America, and Intel (mixed-signal
+	modeling/verification and system design of high-speed serial transceivers). He served as a member of 
+	the wireline subcommittee for ISSCC from 2009 to 2014. Now he works at Meta on signal and power integrity,
+	high-speed I/O interface for next-generation AR/VR devices.
+       </td>
+		</tr>
+    <tr style="vertical-align:middle" id="sp-yilmaz">
+			<td width="15%" align="center"><img src="./images/portrait-yilmaz.png" height="auto" </td>
+			<td width="20%" align="left">
+        <strong><a href="https://www.linkedin.com/in/mahmut-yilmaz-4961196/">Dr. Mahmut Yilmaz</a></strong>, Director, Nvidia <br>
+        Mahmut Yilmaz earned his M.S. and Ph.D. degrees in Electrical and Computer Engineering from Duke University in 2006 and 2009,
+	respectively. Currently, he serves as a Director of Engineering at NVIDIA, where he specializes in enhancing chip reliability
+	and quality, silicon lifecycle management, and developing the NVIDIA MATHS and In-System Test architecture.
+       </td>
+		</tr>
+    -->
+      </tbody>
+</table>	
+		</p>
+	</h5>
+    </div>
+  </div>   
+
+  <div class="w3-row-padding w3-padding-16 w3-container" id="schedule"> 
+    <div class="w3-content">
+      <h2>Schedule</h2>
+        <h5 class="w3-text-black">
+          <p> The AT&T Hotel and Conference Center, Room #103 <br>
+	      Austin, Texas, USA <br>
+	      November 2<sup>nd</sup>, 2024, 8:15am - 5:00pm CT <br>
+	      <strong>Zoom Call: <a href="https://us06web.zoom.us/j/85193184152?pwd=9aq5bbY7tfIs6ABj5UmaDVGbfxUaGr.1"> Join the meeting </a>  </strong> 
+		(Meeting ID: 851 9318 4152, Passcode: 765776)       
+	  </p>
+          <p  style="font-size:8px; ">	  
+ <table cellpadding="5" cellspacing="0" style="width:100%">
+	<tbody>
+		<tr style="background-color:lightblue; vertical-align:middle">
+			<th width="15%">Session</th>
+			<th width="20%">Speaker</th>
+			<th width="50%">Title</th>
+			<th width="15%">Materials</th>
+		</tr>
+    <!-- 
+		<tr style="vertical-align:middle">
+			<td align="left">Open Remark<br><small>8:15-8:30am</small></td>
+			<td align="left"> <a href="#org-chester">Chester P.</a> & <a href="#org-peipei">Peipei Z.</a> <br> Co-Chairs</td>
+			<td align="left">  </td>
+			<td align="center"> </td>
+		</tr>
+		<tr style="background-color:lightgray; vertical-align:middle">
+			<td align="left"> Keynote <br><small>8:30-9:00am</small> </td>
+			<td align="left"> <a href="#sp-mallik">Arindam Mallik</a> <br> IMEC </td>
+			<td align="left"> The Evolution and Impact of Digital Computing Demand on the Semiconductor Industry</td>
+			<td align="center">  <a href="https://drive.google.com/file/d/1yJctBcWN9A-gGhjkILHj2uexXdC6EMQj/view"> Slides </a> <br>
+			</td>
+		</tr>
+		<tr style="vertical-align:middle">
+			<td align="left"> Invited Talk <br><small>9:00-9:20am</small> </td>
+			<td align="left"> <a href="#sp-park"> Fitzgerald Park </a> <br> Pusan National Univ </td>
+			<td align="left"> Pre-RTL Simulation Based Design Space Exploration for Multi-chiplet Dataflows </td>
+			<td align="center"> <a href="https://drive.google.com/file/d/1qkteyQokQixFBYq2__0UbH_d5E2VA4xp/view"> Slides </a> <br> 
+				
+			</td>
+		</tr>
+		<tr style="background-color:lightgray; vertical-align:middle">
+			<td align="left">Invited talk <br><small>9:20-9:40am</small> </td>
+			<td align="left"> <a href="#sp-ma"> Kaisheng Ma </a> <br> Tsinghua Univ </td>
+			<td align="left"> Interconnection Network Architecture based on Advanced Packaing: From Chiplets to Systems </td>
+			<td align="center"> <a href="https://drive.google.com/file/d/1_b4C4KRLZUi75symbbQgEOlTX652BS60/view"> Slides </a> <br>
+				
+			</td>
+		</tr>
+		<tr style="vertical-align:middle">
+			<td align="left">Invited talk <br><small>9:40-10:00am</small> </td>
+			<td align="left"> <a href="#sp-bapi"> Bapi Vinnakota </a> <br> NIST </td>
+			<td align="left"> CHIPS NAPMP: Leveraging Advanced Packaging for Chiplets </td>
+			<td align="center"> <a href="https://drive.google.com/file/d/1FtBtN6y-i2z-z8zPMSRmERS1cG_vVvSL/view"> Slides </a> <br>
+			
+			</td>
+		</tr>
+		<tr style="background-color:lightgray; vertical-align:middle">
+			<td align="left"> Coffee Break <br><small>10:00-10:30am</small> </td>
+			<td align="left"> &nbsp; </td>
+			<td align="left"> &nbsp; </td>
+			<td align="center"> &nbsp; </td>
+		</tr>
+		<tr style="vertical-align:middle">
+			<td align="left">Keynote <br><small>10:30-11:00am</small> </td>
+			<td align="left"> <a href="#sp-pan"> David Pan </a> <br> UT Austin </td>
+			<td align="left"> AI for 3D Heterogeneous Integration of Everything: Digital, Analog, RF, Photonics, and beyond </td>
+			<td align="center"> <a href="https://drive.google.com/file/d/1HQUdkUGkMEOKQ0DHf9lCOH3X7Tyvvfiw/view"> Slides </a> <br>
+			</td>
+		</tr>		
+		<tr style="background-color:lightgray; vertical-align:middle">
+			<td align="left">Invited talk <br><small>11:00-11:20am</small> </td>
+			<td align="left"> <a href="#org-dj"> Dharmesh Jani </a> <br> Meta </td>
+			<td align="left"> Silicon Dreams: Towards the AI Singularity </td>
+			<td align="center"> <a href="https://drive.google.com/file/d/1EUYPSv4zdOWwKu6Xlnvw3PczDNVvBpMj/view"> Slides </a> <br>
+				
+			</td>
+		</tr>
+		<tr style="vertical-align:middle">
+			<td align="left"> Invited talk <br><small>11:20-11:40am</small> </td>
+			<td align="left"> <a href="#sp-durgesh"> Durgesh Srivastava </a> <br> MIPS </td>
+			<td align="left"> Overcoming Manufacturing and Packaging Challenges for Chiplet Integration: A Small Company's Perspective </td>
+			<td align="center"> <a href="https://drive.google.com/file/d/1wAq2mZmSz4vZqUDSKU4LT9k_cK7jYxo1/view"> Slides </a> <br> 
+				
+			</td>
+		</tr>
+		<tr style="background-color:lightgray; vertical-align:middle">
+			<td align="left">Invited talk<br><small>11:40-12:00pm</small> </td>
+			<td align="left"> <a href="#sp-saeed"> Saeed Fathololoumi </a> <br> Intel </td>
+			<td align="left"> Connecting XPUs using Optical Compute Interconnect Chiplets </td>
+			<td align="center">  <a href="https://drive.google.com/file/d/1WDPQzRQJK4bHAPXo65GfSYK-g83sbrfs/view"> Slides </a>  </td>
+		</tr>
+		<tr style="background-color:lightblue; vertical-align:middle">
+			<td align="left"> Lunch Break <br><small>12:00-1:00pm</small> </td>
+			<td align="left"> &nbsp; </td>
+			<td align="left"> &nbsp; </td>
+			<td align="center"> &nbsp; </td>
+		</tr>
+		<tr style="vertical-align:middle">
+			<td align="left">Keynote<br><small>1:00-1:30pm</small> </td>
+			<td align="left"> <a href="#sp-nathan"> Nathan K. </a> <br> AMD </td>
+			<td align="left">  Ultra Accelerator Link (UALink) </td>
+			<td align="center"> <a href="https://drive.google.com/file/d/1pWFQdaOFllueObAV32rhSawNTniWd8J_/view"> Slides </a>  <br>
+			</td>
+		</tr>
+		<tr style="background-color:lightgray; vertical-align:middle">
+			<td align="left"> Invited talk <br><small>1:30-1:50pm</small> </td>
+			<td align="left"> <a href="#sp-deb"> Debendra Sharma </a> <br> UCIe Consortium </td>
+			<td align="left">UCIe<sup>TM</sup> 2.0: Progress towards open chiplet ecosystem</td>
+			<td align="center"> <a href="https://drive.google.com/file/d/1nDLWoKUKx-7DjLtwCfMYdzXmGrxLRSR_/view"> Slides </a>  <br> 
+			</td>
+		</tr>
+		<tr style="vertical-align:middle">
+			<td align="left"> Invited talk <br><small>1:50-2:10pm</small> </td>
+			<td align="left"> <a href="#sp-gu"> Jiaqi Gu </a> <br> ASU </td>
+			<td align="left"> Cross-Layer Co-Design and Design Automation Toward Reconfigurable, Robust, and Secure Heterogeneous Electronic-Photonic AI Eco-systems </td>
+			<td align="center"> <a href="https://drive.google.com/file/d/1g7KcM3UlL5-TGf1vFSHkLUi60YcmOpac/view"> Slides </a> <br>
+				
+			</td>
+		</tr>
+		<tr style="background-color:lightgray; vertical-align:middle">
+			<td align="left">Invited talk <br><small>2:10-2:30pm </small> </td>
+			<td align="left"> <a href="#sp-tushar"> Tushar Krishna </a> <br> Georgia Tech</td>
+			<td align="left"> TACOS: Topology-Aware Collective Algorithm Synthesizer for Diverse AI Platforms </td>
+			<td align="center">  <a href="https://drive.google.com/file/d/1AhLeSoVbzuflIF3KviSjt3vyZyQK62oE/view"> Slides </a> <br>
+				
+			</td>
+		</tr>
+		<tr style="vertical-align:middle">
+			<td align="left"> Invited talk <br><small>2:30-2:50pm</small> </td>
+			<td align="left"> <a href="#sp-venkat"> Venkat Ramesh </a> <br> Meta </td>
+			<td align="left"> Hardware Diagnostics: Spanning Hardware Lifecycle for Silicon through Clusters </td>
+			<td align="center"> <a href="https://drive.google.com/file/d/1paMxcfyHtm5eSP41lXQ_5FknWCM5E6xa/view"> Slides </a> <br>
+				
+			</td>
+		</tr>
+		<tr style="background-color:lightgray; vertical-align:middle">
+			<td align="left"> Coffee Break <br><small>2:50-3:20pm</small> </td>
+			<td align="left"> &nbsp; </td>
+			<td align="left"> &nbsp; </td>
+			<td align="center"> &nbsp; </td>
+		</tr>
+		<tr style="vertical-align:middle">
+			<td align="left">Keynote<br><small>3:20-3:50pm</small> </td>
+			<td align="left"> <a href="#sp-cao"> Lihong Cao </a> <br> ASE </td>
+			<td align="left"> Advanced Packaging Technology for Chiplet and Heterogeneous Integration </td>
+			<td align="center"> <a href="https://drive.google.com/file/d/19jzdBLLPu0Vg7mVL34R-2NvuzRIPnpsK/view"> Slides </a>  <br>
+				
+			</td>
+		</tr>		
+		<tr style="background-color:lightgray; vertical-align:middle">
+			<td align="left">Invited talk <br><small>3:50-4:10pm</small> </td>
+			<td align="left"> <a href="#sp-srikant"> Srikant Bharadwaj </a> <br> Microsoft </td>
+			<td align="left"> InC2: Design of Interconnection Systems for Composable Chiplet Architectures </td>
+			<td align="center"> <a href="https://drive.google.com/file/d/1GIWhijfxf99VL94jRh30a7bjcFOap5tq/view"> Slides </a>  <br> 
+			</td>
+		</tr>
+		<tr style="vertical-align:middle">
+			<td align="left"> Invited talk <br><small>4:10-4:30pm</small> </td>
+			<td align="left"> <a href="#sp-koichi"> Koichi Yamaguchi </a> <br> Meta </td>
+			<td align="left"> 3D Chiplet Technologies for AR Applications </td>
+			<td align="center"> <a href="https://drive.google.com/file/d/165vLOulEDhQWBBqEPHAzor1QF1VjGDjq/view"> Slides </a> <br>
+			</td>
+		</tr>
+		<tr style="background-color:lightgray; vertical-align:middle">
+			<td align="left"> Invited talk <br><small>4:30-4:50pm</small> </td>
+			<td align="left">  <a href="#sp-yilmaz"> Mahmut Yilmaz </a> <br> Nvidia </td>
+			<td align="left"> Using NVIDIA MATHS for Silicon Lifecycle Management: From Wafer Probe to In-System Test and RMA </td>
+			<td align="center"> <a href="https://drive.google.com/file/d/1Sx2UH1TuKU77SXKLxp50zIZS8H0bLP0q/view"> Slides </a>  <br> 
+			</td>
+		</tr>
+		<tr style="vertical-align:middle">
+			<td align="left"> Close Remark <br><small>4:50-5:00pm</small> </td>
+			<td align="left"> <a href="#org-weifeng"> Weifeng Zhang</a> <br> Co-Chair </td>
+			<td align="left"> Polymorphic Architecture: from chiplets to large-scale computing culsters</td>
+			<td align="center"> <a href="https://drive.google.com/file/d/1ZuWqmQWXiMvyGj1q4gpjnMEXBOWm5VrF/view"> Slides </a> <br>
+			</td>
+		</tr>
+    -->
+  </tbody>
+ </table>
+	</p>	
+	</h5>
+    </div>
+  </div>   
+
+    <div class="w3-row-padding w3-padding-16 w3-container" id="venue">
+    <div class="w3-content">
+      <h2>Venue</h2>
+        <h5 class="w3-text-black">
+          <p>HiPChips Conference is colocated with &nbsp;<a href="https://microarch.org/micro58/" style="color: blue">MICRO 2025</a><br>
+             The 58<sup>th</sup> IEEE/ACM International Symposium on Microarchitecture® <br>
+	     <br>
+             Seoul, South Korea
+          </p>
+        </h5>
+    </div>
+  </div>   
+  </body>
+</html>
